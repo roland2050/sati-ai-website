@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SATI AI – บันทึกค่าใช้จ่ายด้วย AI เสียง</title>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family: 'Prompt', sans-serif; background:#fff; color:#222; line-height:1.6; padding:2rem 1rem; }
+    .container { max-width:480px; margin:0 auto; text-align:center; }
+    .logo { font-size:2.5rem; font-weight:700; color:#00D1A4; margin-bottom:0.5rem; }
+    .tagline { font-size:1.1rem; color:#555; margin-bottom:2rem; }
+    .btn { display:inline-block; background:#00D1A4; color:white; padding:1rem 2rem; border-radius:50px; font-size:1.2rem; font-weight:600; text-decoration:none; margin:1.5rem 0; }
+    .features { display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin:3rem 0; }
+    .card { background:#f8fffd; padding:1.5rem; border-radius:16px; border:2px solid #e0f7f2; }
+    .card h3 { color:#00D1A4; margin-bottom:0.5rem; }
+    .premium { background:#00D1A4; color:white; padding:1rem; border-radius:16px; margin:2rem 0; font-weight:600; }
+    footer { margin-top:3rem; color:#888; font-size:0.9rem; }
+    a { color:#00D1A4; text-decoration:none; }
+    @media (max-width: 480px) { .features { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="logo">SATI AI</h1>
+    <p class="tagline">บันทึกค่าใช้จ่ายด้วย AI เสียง · ฉลาด ง่าย เร็ว</p>
+    
+    <a href="#" class="btn" onclick="alert('เร็วๆ นี้ใน App Store และ Google Play')">สามารถดาวน์โหลดฟรีได้เร็วๆนี้</a>
+
+    <div class="features">
+      <div class="card">
+        <h3>พูด = บันทึก</h3>
+        <p>“ซื้อกาแฟ 45 บาท” → AI สร้างบิลใน 2 วิ</p>
+      </div>
+      <div class="card">
+        <h3>ถ่ายบิล = วิเคราะห์</h3>
+        <p>จำนวน · วันที่ · ประเภท → คลิกยืนยัน</p>
+      </div>
+      <div class="card">
+        <h3>ภาษาไทย 100%</h3>
+        <p>7-Eleven · ตลาดนัด · สำเนียงทุกภาค</p>
+      </div>
+      <div class="card">
+        <h3>วิเคราะห์อัจฉริยะ</h3>
+        <p>รายงาน · ตั้งงบ · แจ้งเตือนเกิน</p>
+      </div>
+    </div>
+
+    <div class="premium">
+      พรีเมียม 49 บาท/เดือน<br>
+      <small>ไม่จำกัด · ปิดโฆษณา · แบ่งบิลเพื่อน</small>
+    </div>
+
+    <footer>
+      © 2025 SATI AI · 
+      <a href="mailto:support@sati.ai">support@sati.ai</a> · 
+      <a href="/privacy.html">ความเป็นส่วนตัว</a> · 
+      <a href="/terms.html">เงื่อนไข</a>
+    </footer>
+  </div>
+
+  <script>
+    if (location.pathname === '/privacy.html') {
+      document.body.innerHTML = `<div class="container" style="text-align:left; margin-top:3rem;">
+        <h2>นโยบายความเป็นส่วนตัว</h2>
+        <p>เราเก็บเฉพาะข้อมูลที่จำเป็นสำหรับการบันทึกค่าใช้จ่าย<br>
+        ข้อมูลถูกเข้ารหัสทั้งในอุปกรณ์และคลาวด์<br>
+        ไม่ขายหรือแชร์ข้อมูลผู้ใช้<br>
+        คุณสามารถลบหรือส่งออกข้อมูลได้ทุกเมื่อ</p>
+        <a href="/">กลับหน้าหลัก</a>
+      </div>`;
+    }
+    if (location.pathname === '/terms.html') {
+      document.body.innerHTML = `<div class="container" style="text-align:left; margin-top:3rem;">
+        <h2>เงื่อนไขการใช้บริการ</h2>
+        <p>ห้ามใช้แอปในทางที่ผิดกฎหมาย<br>
+        เราสงวนสิทธิ์ระงับบัญชีที่ละเมิด<br>
+        ค่าบริการพรีเมียมไม่สามารถคืนเงินได้<br>
+        แอปอาจมีการอัปเดตฟีเจอร์โดยไม่แจ้งล่วงหน้า</p>
+        <a href="/">กลับหน้าหลัก</a>
+      </div>`;
+    }
+  </script>
+</body>
+</html>
