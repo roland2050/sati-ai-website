@@ -34,7 +34,16 @@
     <h1 class="logo">SATI AI</h1>
     <p class="tagline">บันทึกค่าใช้จ่ายด้วย AI เสียง · ฉลาด ง่าย เร็ว</p>
     
-    <a href="#" class="btn" onclick="alert('เร็วๆ นี้ใน App Store และ Google Play')">สามารถดาวน์โหลดฟรีได้เร็วๆนี้</a>
+   <a href="#" class="btn" 
+   onclick="
+     alert('เร็วๆ นี้ใน App Store และ Google Play');
+     gtag('event', 'click_download', {
+       'event_category': 'Button',
+       'event_label': 'Download Free'
+     });
+   ">
+  สามารถดาวน์โหลดฟรีได้ในเร็วๆนี้!
+</a>
 
     <div class="features">
       <div class="card">
@@ -93,3 +102,4 @@
 </body>
 
 </html>
+
